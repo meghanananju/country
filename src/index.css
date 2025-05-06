@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 .container {
@@ -13,13 +13,9 @@ body {
 }
 
 .title {
-  /* text-align: center;
-  margin-top: 2px;
-  margin-bottom: 5px;
-  font-size: 30px; */
   width: 600px;
   padding: 15px;
-  margin: auto;
+  margin: 10px auto;
   border: 2px solid black;
   border-radius: 20px;
   display: flex;
@@ -29,33 +25,37 @@ body {
   background-color: rgb(102, 110, 218);
 }
 
-.form {
+form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+
+
 }
 
 input[type="text"] {
   width: 400px;
-  padding: 2px;
-  border: 5px solid #ddd;
+  padding: 10px;
+  border: 2px solid #ddd;
   border-radius: 6px;
   font-size: 16px;
 }
 
 .button {
-  padding: 12px;
+  margin: 20px;
+  padding: 10px 20px;
   border: none;
-  background-color: #007bff;
+  background-color: #150333;
   color: #fff;
   font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #44237a;
 }
 
 .error {
@@ -65,22 +65,25 @@ input[type="text"] {
 }
 
 .infoContainer {
-  margin-top: 30px;
-  padding: 20px;
+  margin-top: 5px;
+  padding: 5px;
   background-color: #fafafa;
   border-radius: 8px;
   border: 1px solid #ddd;
+
+  display: flex;
+  align-items: flex-start;
+
+
 }
 
-.infoContainer p {
-  margin: 10px 0;
-  font-size: 16px;
+.infoText {
+  flex: 1;
 }
 
 .flag {
-  width: 100%;
   max-width: 300px;
   border: 1px solid #ddd;
   border-radius: 6px;
-  margin-right: 15px;
+  display: block;
 }

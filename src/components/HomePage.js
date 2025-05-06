@@ -74,10 +74,13 @@ const HomePage = () => {
           name
           capital
           region
+          subregion
+          borders
           population
           area
           flag
           mapLink
+          latlng
         }
       }
     `;
@@ -90,6 +93,7 @@ const HomePage = () => {
             });
 
             const result = await response.json();
+
             return result.data.country;
         } catch (error) {
             console.error("GraphQL fetch error:", error);
@@ -116,8 +120,8 @@ const HomePage = () => {
     return (
         <div className="container">
             <h1 className="title">Country Info Explorer</h1>
+            <label style={{ color: 'black', fontSize: '25px', fontWeight: '600' }}>Country</label>
             <div className="form">
-                <label>Country</label>
                 <input
                     type="text"
                     value={countryName}
@@ -131,14 +135,21 @@ const HomePage = () => {
 
             {countryData && (
                 <div className="infoContainer">
-                    <p><strong>Capital:</strong> {countryData.capital}</p>
-                    <p><strong>Region:</strong> {countryData.region}</p>
-                    <p><strong>Population:</strong> {countryData.population}</p>
-                    <p><strong>Area:</strong> {countryData.area} km²</p>
+
+                    <div class="infoText">
+                        <p><strong>Capital:</strong> {countryData.capital}</p>
+                        <p><strong>Region:</strong> {countryData.region}</p>
+                        <p><strong>Sub-Region:</strong> {countryData.subregion}</p>
+                        <p><strong>Borders:</strong> {countryData.borders.join(',')}</p>
+                        <p><strong>Population:</strong> {countryData.population}</p>
+                        <p><strong>Area:</strong> {countryData.area} km²</p>
+                        <p><strong>Latitude/Longitude:</strong> {countryData.latlng.join(',')}</p>
+                        <p>
+                            <a href={countryData.mapLink} target="_blank" rel="noopener noreferrer">Google Map Link</a>
+                        </p>
+
+                    </div>
                     <img src={countryData.flag} alt="flag" className="flag" />
-                    <p>
-                        <a href={countryData.mapLink} target="_blank" rel="noopener noreferrer">Google Map Link</a>
-                    </p>
                 </div>
             )}
         </div>
