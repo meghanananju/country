@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Country Info Explorer 🌍
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive web application that provides comprehensive information about countries worldwide using the [REST Countries API](https://restcountries.com/).
 
-## Available Scripts
+## Features ✨
 
-In the project directory, you can run:
+- **Interactive Country Selection**: Dropdown menu with all available countries
+- **Detailed Country Information**:
+  - Capital city
+  - Region and subregion
+  - Border countries
+  - Population and area
+  - Geographic coordinates
+  - Official languages
+  - Currencies
+- **Visual Elements**:
+  - Country flag display
+  - World map background
+  - Google Maps link
+- **Responsive Design**: Works on both desktop and mobile devices
+- **No-Scroll Desktop Experience**: All content fits on one screen
+- **Mobile-Friendly**: Adapts to smaller screens with scrollable content
 
-### `npm start`
+## Technologies Used 🛠️
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js
+- **Styling**: CSS with responsive design
+- **API**: REST Countries API
+- **Hosting**: Vercel
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Demo 🔗
 
-### `npm test`
+Try it out here: [Country Info Explorer](https://countryinfoexplorer-6nzpsvkw1-meghanananju59s-projects.vercel.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation 💻
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run this project locally:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/meghanananju/country.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd country
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-### `npm run eject`
+## How to Use 🕹️
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Select a country from the dropdown menu
+2. View detailed information about the selected country
+3. Click "View on Google Maps" to see the country's location
+4. On mobile devices, scroll to view all information
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Future Enhancements 🚀
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [ ] Add dark mode toggle
+- [ ] Implement country comparison feature
+- [ ] Add regional statistics and charts
+- [ ] Include historical and cultural information
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing 🤝
 
-## Learn More
+Contributions are welcome! Please open an issue or submit a pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License 📄
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
